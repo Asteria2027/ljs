@@ -1,0 +1,2278 @@
+body, html { font-family: "microsoft yahei"; font-size: 12px; position:relative;  background:#fff;font-weight: normal;}
+
+ul, ol, li {list-style-type: none;}
+th {
+	font-weight: normal;
+}
+img{border:none}
+a{transition:all 0.2s ease-in; text-decoration:none;}
+a:link{
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none;
+}
+a:hover{
+	 text-decoration:none;
+     color: #C81623;
+}
+a:active{
+	text-decoration:none;
+}
+input{font-family: "microsoft yahei";}
+*{margin:0; padding:0;}
+i{font-style:normal;}
+.clearfix:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.clearfix {
+    zoom:1;
+}
+// APP 显示
+.appShow {
+  display: none;
+}
+.appShow.appShow_audit {
+  text-align: left;padding-bottom: 0.1rem;
+}
+
+
+// 信息披露公共菜单
+.xxpl_menu {
+	position: fixed;
+	top: 0.6rem;
+	left: 0;
+	width: 100%;
+	padding: 0.1rem 0;
+	background-color: #ffffff;
+	z-index: 10;
+  border-bottom: 0.15rem solid #f9f9f9;
+	ul {
+    width: 100%;
+		li {
+			float: left;
+			width: 25%;
+			text-align: center;
+			padding-top: 0.2rem;
+			font-size: 0;
+			&.hidden{
+				display: none;
+			}
+			img {
+				width: 0.7rem;
+			}
+			span {
+				display: block;
+				font-size: 0.18rem;
+				line-height: 0.4rem;
+				color: #4d4d4d;
+			}
+		}
+	}
+	.xxpl_menu_switch {
+		text-align: center;
+    line-height: 0.1rem;
+		img {
+			width: 0.2rem;
+		}
+	}
+
+	&.operationalData {
+		ul {
+			li {
+				width: 33%;
+			}
+		}
+	}
+  &.riskManagement {
+	ul {
+	  li {
+		width: 33%;
+	  }
+	}
+  }
+  &.riskTips {
+	ul {
+	  li {
+		width: 25%;
+		span {
+		  line-height: 0.28rem;
+		  padding-top: 0.1rem;
+		}
+	  }
+	}
+  }
+  &.partners {
+
+	ul {
+	  li {
+		width: 50%;
+		span {
+		  line-height: 0.28rem;
+		  padding-top: 0.1rem;
+		}
+	  }
+	}
+  }
+}
+
+
+
+// 公共样式
+.xxpl_box {
+	font-size: 12px;
+	position: relative;
+	.common_title {
+		text-align: center;
+		padding: 0.17rem;
+		font-size: 0.32rem;
+		#bundle(){
+			span {
+				font-weight: bold;
+				position: relative;
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+    			margin-top: -0.075rem;
+					left: -1.1rem;
+					height: 0.15rem;
+					width: 1rem;
+					background: url(./images/title_diandian.png) center no-repeat;
+				}
+				&::after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+    			margin-top: -0.075rem;
+					right: -1.1rem;
+					height: 0.15rem;
+					width: 1rem;
+					background: url(./images/title_diandian.png) center no-repeat;
+				}
+			}
+		}
+		.p_title {
+			font-weight: bold;
+			line-height: 0.5rem;
+			#bundle
+		}
+		.p_bottom {
+			padding-top: 0.1rem;
+			font-size: 0.2rem;
+			line-height: 0.3rem;
+			color: #fb7c5c;
+		}
+		.p_title2 {
+			font-weight: bold;
+			line-height: 0.5rem;
+			line-height: 1rem;
+			#bundle
+		}
+	}
+
+}
+.legalPerson_signature {
+	text-align: right;
+	img {
+		width: 2.5rem;
+	}
+}
+
+.legalPerson_signature.audit {
+  padding-bottom: 0.2rem;
+}
+
+.legalPerson_signature.signatureOperationalData {
+  padding: 0.4rem 0;
+}
+// 组织信息
+.xxpl_OrganizationInfo {
+	.xxpl_OrganizationInfo_con {
+		padding: 0.49rem 0.17rem;
+		
+    }
+
+    // 公共字体样式
+    .common_word {
+		color: #777777;
+	    font-size: 0.22rem;
+	    line-height: 0.3rem;
+	    padding: 0.12rem 0;
+    }
+    .common_h{
+			margin: 0.8rem 0 0.4rem;
+			color: #fa653b;
+			background-color: #ffd1ad;
+			display: inline-block;
+			width: 1.15rem;
+			height: 0.33rem;
+			line-height: 0.33rem;
+			text-align: center;
+			font-size: 0.23rem;
+    }
+}
+
+
+// 公司介绍
+.xxpl_OrganizationInfo {
+	.xxpl_OrganizationInfo_introduce {
+		.xxpl_OrganizationInfo_con_detail {
+			p {
+				color: #777777;
+			    text-indent: 2em;	
+			    font-size: 0.22rem;
+			    line-height: 0.3rem;
+			    padding: 0.12rem 0;
+			}
+		}
+    }
+}
+
+// 股权结构
+.xxpl_OrganizationInfo {
+	.xxpl_OrganizationInfo_shareholding {	
+		padding: 0.49rem 0.17rem;
+		
+		.xxpl_OrganizationInfo_con_detail {
+			img {
+				width: 100%;
+				margin-top: 0.6rem;
+			}
+		}
+    }
+}
+
+
+// 股东背景
+.xxpl_OrganizationInfo_gdbj {
+	.gdbj_detial {
+		.gdbj_detial_box {
+      width: 100%;
+			padding: 0.5rem 0 0.5rem;
+			.gdbj_detial_box_img {
+				float: left;
+				width: 2.4rem;
+				img{
+					width: 100%;
+				}
+			}
+			.gdbj_detial_box_word {
+				float: right;
+				width: 3.3rem;
+				.p_title {
+					line-height: 0.5rem;
+					font-weight: bold;
+					position: relative;
+					color: #2f2f2f;
+				}
+				.p_title:before {
+				    position: absolute;
+			        left: -0.15rem;
+				    top: 0.19rem;
+				    content: '';
+				    width: 0.05rem;
+				    height: 0.05rem;
+				    background-color: #d0333a;
+				}
+
+			}
+			
+		}
+		.gdbj_detial_box:nth-child(2) {
+			.gdbj_detial_box_img {
+				float: right;
+			}
+			.gdbj_detial_box_word {
+				float: left;
+			}
+			.p_title {
+				text-align: right;
+			}
+			.p_title:before  {
+				left: 3.4rem;
+			}
+		}
+	}
+}
+
+
+
+// 发展历程 
+.xxpl_OrganizationInfo_grow {
+	.grow_detial {
+		display: block;
+		display: flex;
+		margin-top: 0.8rem;
+		margin-bottom: 0.44rem;
+		height: 10.3rem;
+		width: 100%;
+		background: url("./images/OrganizationInfo_growBac.png") no-repeat;
+		background-size: 100% 100%;
+		position: relative;
+		.grow_detial_arrow {
+			position: absolute;
+			display: block;
+			height: 0.42rem;
+			width: 100%;
+			z-index: 1;
+			img {
+				display: block;
+				height: 0.2rem;
+				margin: 0 auto;
+			}
+		}
+		.grow_detial_arrowUp {
+			top: 0.22rem;
+		}
+		.grow_detial_arrowDown {
+			bottom: 0;
+		}
+		.grow_detail_left {
+			margin-top: 0.52rem;
+		}
+		.grow_detail_content {
+			position: relative;
+			width: 100%;
+			height: 10.3rem;
+			overflow: hidden;
+			border: 1px solid #ebd9c1;
+    	background-color: #f7f3e8;
+			.line {
+				position: absolute;
+				top: 0.6rem;
+				left: 50%;
+				width: 0.02rem;
+				height: 9.1rem;
+				background-color: #d5b17f;
+			}
+			>div {
+				position: relative;
+				width: 100%;
+				height: 9.1rem;
+				margin-top: 0.6rem;
+				overflow: hidden;
+			}
+			>div>ul {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				overflow: hidden;
+			}
+			ul>div {
+				position: relative;
+				display: block;
+				box-sizing: border-box;
+				width: 50%;
+				float: left;
+				font-size: 0.18rem;
+				strong {
+					color: #797470;
+					line-height: 0.55rem;
+				}
+				p {
+					color: #95641F;
+					line-height: 0.33rem;
+				}
+				img {
+					height: 1.2rem;
+					width: 1.72rem;
+				}
+			}
+			ul>div:nth-child(odd){
+				padding-left: 0.25rem;
+				li {
+					text-align: right;
+				}
+			}
+			ul>div:nth-child(odd)>div{
+				padding-right: 0.2rem;
+			}
+			ul>div:nth-child(even){
+				padding-right: 0.25rem;
+				li {
+					text-align: left;
+				}
+			}
+			ul>div:nth-child(even)>div{
+				padding-left: 0.2rem;
+			}
+			ul>div>div {
+				position: relative;
+				margin-bottom: 0.85rem;
+			}
+			ul>div>div::after {
+				position: absolute;
+				content: "";
+				bottom:-0.2rem;
+				width: 1.5rem;
+				height: 0.12rem;
+			}
+			ul>div:nth-child(odd)>div::after{
+				background: url('./images/OrganizationInfo_growline1.png');
+				background-repeat:no-repeat;
+				background-size:1.5rem 0.12rem;
+				right: -0.06rem;
+			}
+			ul>div:nth-child(even)>div::after{
+				background: url('./images/OrganizationInfo_growline2.png');
+				background-repeat:no-repeat;
+				background-size:1.5rem 0.12rem;
+				left:  -0.05rem;
+			}
+			ul>div:nth-child(2n){
+				margin-top: 1.85rem;
+			}
+		}
+	}
+}
+
+
+// 平台信息+公司信息
+.xxpl_OrganizationInfo_platInfo {
+	.platInfo_detial {
+		padding-bottom: 0.3rem;
+		.platInfo_detial_box {
+			table {
+				width: 100%;
+				font-size: 0.17rem;
+				border:1px solid #CFCFCF;
+    			tbody {
+	    			tr {
+							th {
+								border-bottom: 0.01rem solid #CFCFCF;
+								line-height: 0.43rem;
+								padding: 0.31rem;
+								text-align: left;
+								a {
+									color:#ED8190;
+								}
+							}
+							th:first-child {
+								width: 1.61rem;
+								text-align: center;
+								padding: 0;
+								border-right: 0.01rem solid #CFCFCF;
+								background-color: #fffaf6;
+							}
+							&:last-child {
+								th {
+									border-bottom: none;
+								}
+							}
+						}	
+						
+    			}
+
+			}
+
+			.officialChannel_con {
+				ul {
+					display: block;
+					display: flex;
+					li {
+						display: block;
+						flex: 1;
+						height: 2rem;
+						img {
+							display: block;
+							height: 2rem;
+							width: 1.48rem;
+							margin: 0 auto;
+						}
+					}
+				}
+				ul:first-child {
+					margin-bottom: 0.6rem;
+				}
+			}
+
+		}
+	}
+}
+
+// 业务模式
+.xxpl_OrganizationInfo_businessModel {
+	.businessModel_detial {
+		p {
+			padding: 0.9rem 0 0.5rem;
+		}
+	}
+}
+
+// 影像联金  
+.xxpl_OrganizationInfo .xxpl_OrganizationInfo_video {
+	overflow: hidden;
+
+}
+.xxpl_OrganizationInfo_video .video_detial>div {
+	display: block;
+	display: flex;
+	padding-top: 0.3rem;
+	width: 100%;
+	>div:nth-child(2n+1){
+		padding-right: 0.15rem;
+		video {
+			display: block;
+			width: 100%;
+		}
+	}
+	>div {
+		display: block;
+		flex: 1;
+		video {
+			display: block;
+			width: 100%;
+		}
+		
+	}
+	.video-title {
+		font-size: 0.2rem;
+		line-height: 0.36rem;
+		color: #6A6A6A;
+	}
+	.video-dsc {
+		color: #A3A3A3;
+		font-size: 0.17rem;
+	}
+}
+.xxpl_OrganizationInfo_video .video_detial>div:first-child {
+	padding-top: 0.82rem;
+}
+.xxpl_OrganizationInfo_video .video-more {
+	display: block;
+	color: #D96B6E;
+	font-size: 0.22rem;
+	padding: 0.32rem 0 0.19rem 0;
+	float: right;
+}
+
+// 员工风貌 + 荣誉证书 + 资质证书
+.xxpl_OrganizationInfo_staffAppearance .staffAppearance_detial_padingTop{
+	padding-top: 0.8rem;
+}
+.xxpl_OrganizationInfo_staffAppearance {
+	overflow: hidden;
+	#staffAppearance_detial_wrap div:nth-child(n+4){
+		display: none;
+	}
+	#honor_detial_wrap div:nth-child(n+4){
+		display: none;
+	}
+	.staffAppearance_detial {
+		display: block;
+		display: flex;
+		align-items:center;
+		padding-bottom: 0.32rem;
+		li {
+			display: block;
+			width: 50%;
+			
+			text-align: center;
+			div {
+				margin: 0 auto;
+				width: 2.92rem;
+				img {
+					display: block;
+					width:100%;  
+					vertical-align: middle;
+				}
+			}
+			p {
+				display: block;
+				color: #AEAEAE;
+				font-size: 0.21rem;
+				line-height: 0.4rem;
+			}
+		}
+	}
+	.staffAppearance_detial_more p {
+		display: block;
+		color: #D96B6E;
+		font-size: 0.22rem;
+		padding-bottom: 0.19rem;
+		float: right;
+	}
+}
+
+
+
+// 重大事项
+.xxpl_OrganizationInfo_bigThings {
+	.bigThings_detail_con {
+	  	padding-top: 0.6rem;
+		table {
+		  border: 1px solid #ddd;
+		  border-bottom: none;
+		  border-right: none;
+		  margin: 10px auto;
+		  width: 100%;
+		  tr {
+			&:nth-child(1) {
+			  th {
+				text-align: center;
+				font-weight: bold;
+				font-size: 0.22rem;
+				color: #484848;
+			  }
+			}
+			th {
+			  border: 1px solid #ddd;
+			  border-left: none;
+			  border-top: none;
+			  height: 0.9rem;
+			  font-weight: normal;
+			  font-size: 0.17rem;
+			  background-color: #fafafa;
+			  line-height: 0.26rem;
+			  width: 70%;
+			  text-align: left;
+			  padding: 0.1rem;
+
+			  &:nth-child(2) {
+				text-align: center;
+			  }
+			}
+		  }
+		}
+	  .signature {
+		display: block;
+		display: flex;
+		p {
+		  flex: 1;
+		  text-align: right;
+		  padding-top: 0.5rem;
+		  font-size: 0.2rem;
+		}
+	  }
+	}
+}
+
+//组织架构
+.xxpl_OrganizationInfo_Organization .Organization_detial {
+	padding: 0.8rem 0 0.24rem;
+	margin: 0 0.1rem 0;
+	overflow: hidden;
+	img {
+		display: block;
+		width: 100%;
+		min-height: 2.9rem;
+	}
+}
+
+// 公司团队
+.xxpl_OrganizationInfo_CompanyTeam {
+	.Legal_Person {
+		padding-top: 0.49rem;
+		font-size: 0.19rem;
+		color: #6C6C6C;
+		>div {
+			overflow: hidden;
+			padding-left: 30%;
+			>span {
+				display: inline;
+			}
+			span>span {
+				position: relative;
+				display: block;
+				padding-left: 0.1rem;
+				
+			}
+			span>span:first-child {
+				margin-bottom: 0.18rem;
+			}
+			span>span:nth-child(2) {
+				margin-bottom: 1.15rem;
+			}
+			span>span::before {
+				position: absolute;
+				content: "";
+				top:50%;
+				left: 0;
+				width: 0.05rem;
+				height: 0.05rem;
+				line-height: 0.18rem;
+				background: #D13830;
+				margin-right: 0.1rem;
+			}
+		}
+	}
+	.teamTitle {
+		h4 {
+			display: block;
+			height: 0.36rem;
+			line-height: 0.36rem;
+			font-size: 0.23rem;
+			width: 1.25rem;
+			text-align: center;
+			color: #fff;
+			background: #585858;
+		}
+		p {
+			color: #7C7C7C;
+			font-size: 0.2rem;
+		}
+		p:nth-child(2){
+			margin: 0.13rem 0 0.16rem;
+		}
+		p:nth-child(3){
+			padding-bottom: 0.24rem;
+		}
+	}
+	.teamTitle2 {
+		h4 {
+			display: block;
+			height: 0.36rem;
+			line-height: 0.36rem;
+			font-size: 0.23rem;
+			width: 1.25rem;
+			text-align: center;
+			color: #fff;
+			background: #585858;
+		}
+	}
+	.teamPerson .person {
+		display: block;
+		display: flex;
+		width: 5.99rem;
+		min-height: 4.5rem;
+		border: 0.01rem solid #D9D9D9;
+		margin-bottom: 0.29rem;
+	}
+	.teamPerson .person:nth-child(odd) {
+		li:first-child {
+			width: 2.47rem;
+			text-align: center;
+			img {
+				display: block;
+				height: 2.27rem;
+				width: 2.27rem;
+				margin: 0.7rem auto 0.31rem;
+			}
+			p {
+				font-size: 0.23rem;
+				line-height: 0.32rem;
+			}
+			p:nth-child(2) {
+				position: relative;
+				color: #303030;
+			}
+			p:nth-child(2)::before {
+				position: absolute;
+				content: "";
+				top:50%;
+				margin-left: -0.2rem;
+				width: 0.05rem;
+				height: 0.05rem;
+				background: #D53243;
+				margin-right: 0.1rem;
+			}
+			p:nth-child(3) {
+				color: #888888;
+			}
+		}
+		li:nth-child(2) {
+			display: block;
+			flex: 1;
+			margin-top: 0.93rem;
+			padding-left: 0.38rem;
+			font-size: 0.2rem;
+			color: #797979;
+			line-height: 0.36rem;
+		}
+	}
+	.teamPerson .person:nth-child(even) {
+		li:first-child {
+			display: block;
+			flex: 1;
+			margin-top: 0.93rem;
+			padding-left: 0.17rem;
+			font-size: 0.2rem;
+			color: #797979;
+			line-height: 0.36rem;
+			padding-bottom: 0.7rem;
+		}
+		li:nth-child(2) {
+			width: 2.47rem;
+			text-align: center;
+			img {
+				display: block;
+				height: 2.27rem;
+				width: 2.27rem;
+				margin: 0.7rem auto 0.31rem;
+			}
+			p {
+				font-size: 0.23rem;
+				line-height: 0.32rem;
+			}
+			p:nth-child(2) {
+				position: relative;
+				color: #303030;
+			}
+			p:nth-child(2)::before {
+				position: absolute;
+				content: "";
+				top:50%;
+				margin-left: -0.2rem;
+				width: 0.05rem;
+				height: 0.05rem;
+				background: #D53243;
+				margin-right: 0.1rem;
+			}
+			p:nth-child(3) {
+				color: #888888;
+			}
+		}
+	}
+	.staff_distributed {
+		div:nth-child(1),
+		div:nth-child(2) {
+			width: 100%;
+			height: 2.1rem;
+			margin-top: 0.66rem;
+			img {
+				height: 2.1rem;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		div:nth-child(3) {
+			padding-top: 0.62rem;
+			p {
+				position: relative;
+				font-size: 0.18rem;
+				color: #747474;
+				margin-bottom: 0.17rem;
+				padding-left: 0.48rem;
+			}
+			p:nth-child(1)::before, 
+			p:nth-child(2)::before, 
+			p:nth-child(4)::before {
+				position: absolute;
+				content: "";
+				top:50%;
+				margin-left: -0.2rem;
+				width: 0.05rem;
+				height: 0.05rem;
+				background: #D53243;
+				margin-right: 0.1rem;
+			}
+			p:last-child {
+				margin-bottom: 0.28rem;
+			}
+		}
+	}
+}
+
+//联系我们
+.xxpl_OrganizationInfo_contactUs {
+	ul {
+		margin-top: 0.4rem;
+		li {
+			min-height: 2rem;
+			width: 6.02rem;
+			text-align: center;
+			border: 0.01rem solid #E5E5E5;
+			font-size: 0.18rem;
+			color: #C7C7C7;
+			overflow: hidden;
+			p {
+				margin-bottom: 0.16rem;
+			}
+			p:first-child{ 
+				padding-top: 0.41rem;
+				font-size: 0.2rem;
+				color: #545454;
+			}	
+			p:last-child {
+				margin-bottom: 0.41rem;
+			}
+		}
+		li:first-child,
+		li:last-child {
+			border: 0 none;
+		}
+	}
+}
+
+// 投诉渠道
+
+.xxpl_OrganizationInfo div.xxpl_OrganizationInfo_complaintChannel {
+	border-bottom: 0 none;
+	padding-bottom: 0;
+	.complaintChannel_desc {
+		margin-top: 0.34rem;
+		margin-bottom: 1.35rem;
+		overflow: hidden;
+		li {
+			display: block;
+			display: flex;
+			height: 1.25rem;
+			font-size: 0.16rem;
+			color: #939393;
+			background: #FCFCFC;
+			border: 0.01rem solid #E7E7E7;
+			text-align: center;
+			align-items:center;
+			div {
+				display: block;
+				flex: 1;
+				line-height: 0.25rem;
+			}
+			div:first-child{
+				height: 1.25rem;
+				line-height: 1.25rem;
+				border-right: 0.01rem solid #DDDDDD;
+			}
+		}
+	}
+}
+
+// 联金所底部
+.xxpl_ljsLogo {
+	height: 0.88rem;
+	background:#F5F5F5;
+	padding-top: 0.3rem;
+	img {
+		display: block;
+		height: 0.62rem;
+		margin: 0 auto;
+	}
+}
+.xxpl_ljsLogo.logoCharges {
+  margin-top: 0.6rem;
+}
+// 手机备案信息
+.xxpl_MPrecordInfo {
+	max-width: 6.03rem;
+	min-height: 3.33rem;
+	overflow: hidden;
+	margin: 0rem auto;
+	padding-bottom: 0.5rem;
+	ul {
+		padding-bottom: 0.2rem;
+	}
+	ul>li {
+		display: block;
+		display: flex;
+		min-height: 0.42rem;
+		border-top: 0.01rem solid #bababa;
+		
+		div {
+			display: block;
+			color: #313131;
+			font-size: 0.18rem;
+			text-align: center;
+			flex: 1;
+			// height: 0.42rem;
+			line-height: 0.42rem;
+		}
+		div:first-child {
+			border-right: 0.01rem solid #bababa;
+			border-left: 0.01rem solid #bababa;
+		}
+		div:last-child {
+			border-right: 0.01rem solid #bababa;
+		}
+	}
+	ul>li:nth-child(odd) {
+		background: #F2F2F2;
+	}
+	ul>li:last-child {
+		border-bottom: 0.01rem solid #bababa;
+	}
+
+  	.xxpl_MPrecordInfo_Img {
+	  a {
+		img {
+		  width: 48%;
+		}
+		&:last-child {
+		  img {
+			float: right;
+		  }
+		}
+	  }
+	}
+  .xxpl_MPrecordInfo_progress {
+	img {
+	  width: 5rem;
+	}
+  }
+
+}
+
+// 手机审核信息
+.audit_information {
+	margin-top: 1.18rem;
+	font-size: 0.16rem;
+	text-align: center;
+	ul {
+		width: 100%;
+		li {
+			width: 45%;
+			float: left;
+			margin-left: 2.5%;
+			margin-right: 2.5%;
+			>a {
+			  	display: block;
+			  	height: 3.53rem;
+				width: 2.54rem;
+				width: 100%;
+				box-sizing:border-box;
+			}
+			>p {
+				margin: 0.18rem 0; 
+				color: #7D7D7D;
+			}
+		}
+		li>a {
+			border: 0.01rem solid #d1d1d1;
+			img {
+			  width: 100%;
+			  height: 100%;
+			}
+		}
+
+	}
+	
+}
+
+
+
+// 收费标准
+
+.charges {
+
+	
+	.common_title {
+		background-color: #ebebeb;
+		text-align: center;
+		padding: 0.17rem;
+		border-bottom: 0.01rem solid #dadada;
+		font-size: 0.32rem;
+		.p_title {
+			font-weight: bold;
+			line-height: 0.5rem;
+		}
+		.p_bottom {
+			font-size: 0.2rem;
+			line-height: 0.3rem;
+		}
+	}
+	.charges_detail {
+	  	padding: 0.49rem 0.17rem;
+		margin-top: 0.8rem;
+		ul>li {
+			display: block;
+			display: flex;
+			min-height: 0.72rem;
+			border-top: 0.02rem solid #C9C9C9;
+			div {
+				display: block;
+				color: #313131;
+				font-size: 0.18rem;
+				text-align: center;
+				padding-top:0.2rem;
+				// height: 0.42rem;
+				line-height: 0.42rem;
+			}
+			div:first-child {
+				background:#fffaf6;
+				width: 1.22rem;
+				border-right: 0.02rem solid #C9C9C9;
+				border-left: 0.02rem solid #C9C9C9;
+			}
+			div:last-child {
+				flex: 1;
+				padding-left: 0.27rem;
+				padding-right: 0.27rem;
+				border-right: 0.02rem solid #C9C9C9;
+			}
+		}
+		ul>li:last-child {
+			border-bottom: 0.02rem solid #C9C9C9;
+		}
+		ul>li:first-child {
+			background-color: #fffaf6;
+			color: #737373;	
+		}
+	}
+}
+
+// 运营数据
+
+.Operational_data {
+	.Operational_data_detail {
+	  padding: 0rem 0.17rem 0;
+
+	  .runData_banner {
+		height: 3.33rem;
+		margin-top: 0.59rem;
+		text-align: center;
+		color: #fff;
+		background: url('./images/runDatabg.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		.p_head {
+		  font-size: 0.38rem;
+		  padding-top: 1.3rem;
+		}
+		.p_time {
+		  font-size: 0.16rem;
+		  padding-top: 0.2rem;
+		}
+	  }
+	  .runData_con {
+		padding-top: 0.6rem;
+		h3.tip {
+		  display: inline-block;
+		  height: 0.36rem;
+		  padding: 0 0.15rem;
+		  line-height: 0.36rem;
+		  font-size: 0.18rem;
+		  color: #fa653b;
+		  background-color: #ffd1ad;
+		  margin-bottom: 0.6rem;
+		}
+		ul li {
+		  float: left;
+		  width: 33%;
+		  box-sizing: border-box;
+		  border:0.02rem solid #EFEFEF;
+			text-align: center;
+			height: 2.4rem;
+		  img {
+			margin: 0.23rem 0;
+		  }
+		  p.p_top {
+			font-size: 0.18rem;
+			line-height: 0.32rem;
+			color: #2f2f2f;
+		  }
+		  p.p_bottom {
+			font-size: 0.18rem;
+			line-height: 0.32rem;
+			font-weight: bold;
+			color: #d8333a;
+			padding-bottom: 0.2rem;
+		  }
+		}
+		ul li:nth-child(1),
+		ul li:nth-child(2),
+		ul li:nth-child(4),
+		ul li:nth-child(5) {
+		  border-right: 0;
+		}
+		ul li:nth-child(4),
+		ul li:nth-child(5),
+		ul li:nth-child(6) {
+		  border-top: 0;
+		}
+	  }
+	  .runData_con.borrow .borrow_box {
+		.borrow_box_detial {
+		  position: relative;
+		  width: 2.5rem;
+		  margin: 0 auto;
+		  text-align: center;
+		  p.p_top {
+			font-size: 0.18rem;
+			line-height: 0.32rem;
+			color: #2f2f2f;
+		  }
+		  p.p_bottom {
+			font-size: 0.18rem;
+			line-height: 0.32rem;
+			font-weight: bold;
+			color: #2a2a2a;
+			padding-bottom: 0.2rem;
+		  }
+		  img {
+			height: 2.33rem;
+			width: 100%;
+		  }
+		  .right_message {
+			position: absolute;
+			width: 1.2rem;
+			font-size: 0.14rem;
+			left: 2.5rem;
+			top: 1.41rem;
+			p:last-child {
+			  color: #d8333a;
+			  font-weight: bold;
+			}
+		  }
+		}
+		.top {
+		  margin-bottom: 0.8rem;
+		}
+	  }
+
+	  .runData_con.overdue .overdue_detail ul {
+
+		border:0.02rem solid #EFEFEF;
+	  }
+	  .runData_con.overdue .overdue_detail ul:first-child {
+		border-bottom: 0;
+	  }
+	  .runData_con.overdue .overdue_detail ul li {
+		padding: 0.2rem 0;
+		height: auto;
+		float: left;
+		width: 33%;
+		text-align: center;
+		border: 0;
+		p.p_bottom {
+		  padding-bottom: 0;
+		}
+	  }
+	  .runData_con.overdue .overdue_detail ul li:nth-child(2), {
+		border-left:0.02rem solid #EFEFEF;
+		border-right:0.02rem solid #EFEFEF;
+	  }
+	}
+	
+	.common_title {
+		background-color: #ebebeb;
+		text-align: center;
+		padding: 0.17rem;
+		border-bottom: 0.01rem solid #dadada;
+		font-size: 0.32rem;
+		.p_title {
+			font-weight: bold;
+			line-height: 0.5rem;
+		}
+		.p_bottom {
+			font-size: 0.2rem;
+			line-height: 0.3rem;
+		}
+	}
+
+	
+	.clearfix {
+    display: block;
+		zoom: 1;
+	}
+	.clearfix:before, .clearfix:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+//注册协议
+
+.xss_box {
+	box-sizing: border-box;
+	background: #fff;
+    width: 100%;
+	border-radius: 0.1rem;
+	padding: 0.2rem 0.15rem;
+	.xss_h20 {
+		height: 0.45rem;
+		line-height: 0.45rem;
+		text-align: center;
+		color: #333;
+		font-size: 0.18rem;
+		font-weight: bold;
+		padding: 0 0.36rem;	
+	}
+}
+
+
+// 风险管理
+.riskManagement_wap  {
+  width: 100%;
+  .riskManagement_con{
+	position: relative;
+	width: 100%;
+	.riskManagement_con_1 {
+	  height: 3.75rem;
+	  width: 100%;
+	  background-color: #B8ECFF;
+	  >div {
+		height: 3.75rem;
+		width: 6.21rem;
+		margin: 0 auto;
+		background-image: url('./images/wap_riskManagement_con_1_bg.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100% 100%;
+	  }
+	}
+  }
+  .riskManagement_con_2 {
+	height: 12.51rem;
+	padding-top: 1.02rem;
+	width:100%;
+	background: #B8ECFF;
+  }
+
+  .riskManagementStructure {
+	position: relative;
+	width: 6.07rem;
+	height: 5.42rem;
+	margin: 0 auto;
+	background-image: url('./images/wap_riskManagementStructure_bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	.link_line {
+	  position: absolute;
+	  top: -1.03rem;
+	  left: 3.05rem;
+	  width: 0.14rem;
+	  height: 1.79rem;
+	  background-image: url('./images/wap_riskManagement_link_line.png');
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 100% 100%;
+	}
+	h3 {
+	  position: relative;
+	  padding-top: 1.05rem;
+	  display: block;
+	  height: 0.32rem;
+	  font-size: 0.32rem;
+	  font-weight: bold;
+	  text-align: center;
+	  color: #4696EF;
+	  span:before {
+		position: absolute;
+		top: 1.1rem;
+		left: 1.5rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_left.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	  span:after {
+		position: absolute;
+		top: 1.1rem;
+		right: 1.5rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_right.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	}
+	img {
+	  width: 3.83rem;
+	  height: 2.61rem;
+	  display: block;
+	  margin: 0.59rem auto 0;
+	}
+  }
+
+  .riskAssessmentProcess {
+	margin: 0.74rem auto 0;
+	overflow: hidden;
+	width: 6.07rem;
+	height: 5.21rem;
+	background-image: url('./images/wap_riskAssessmentProcess_bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	h3 {
+	  position: relative;
+	  padding-top: 1.05rem;
+	  display: block;
+	  height: 0.32rem;
+	  font-size: 0.32rem;
+	  font-weight: bold;
+	  text-align: center;
+	  color: #4696EF;
+	  span:before {
+		position: absolute;
+		top: 1.1rem;
+		left: 1.5rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_left.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	  span:after {
+		position: absolute;
+		top: 1.1rem;
+		right: 1.5rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_right.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	}
+	p {
+	  margin: 0 auto;
+	  margin-top: 0.16rem;
+	  font-size: 0.16rem;
+	  line-height: 0.27rem;
+	  width: 2.39rem;
+	  color: #4696EF;
+	  text-align: center;
+	}
+	img {
+	  display: block;
+	  margin: 0.3rem auto 0;
+	  width: 5.49rem;
+	  height: 2.26rem;
+	}
+  }
+
+  .riskManagementSystem {
+	position: relative;
+	height: 4.37rem;
+	max-width: 6.44rem;
+	margin: 0 auto;
+	background: #fff;
+	.link_line_left {
+	  position: absolute;
+	  top: -1.3rem;
+	  left: 1.05rem;
+	  width: 0.14rem;
+	  height: 1.6rem;
+	  background-image: url('./images/wap_riskManagement_link_line.png');
+	  background-repeat: no-repeat;
+	  background-position: center bottom;
+	  background-size: 100% 100%;
+	}
+	.link_line_right {
+	  position: absolute;
+	  top: -1.3rem;
+	  right: 1.05rem;
+	  width: 0.14rem;
+	  height: 1.6rem;
+	  background-image: url('./images/wap_riskManagement_link_line.png');
+	  background-repeat: no-repeat;
+	  background-position: center bottom;
+	  background-size: 100% 100%;
+	}
+	h3 {
+	  position: relative;
+	  padding-top: 0.85rem;
+	  display: block;
+	  height: 0.32rem;
+	  font-size: 0.32rem;
+	  font-weight: bold;
+	  text-align: center;
+	  color: #4696EF;
+	  span:before {
+		position: absolute;
+		top:0.9rem;
+		left: 1.7rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_left.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	  span:after {
+		position: absolute;
+		top: 0.9rem;
+		right: 1.7rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_right.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	}
+	img {
+	  display: block;
+	  margin: 0.5rem auto 0;
+	  width: 6.05rem;
+	  height: 2.09rem;
+	}
+  }
+
+  //  风险预警管理 + 贷后管理
+  .riskManagement_con_3 {
+	height: 16.63rem;
+	padding-top: 1rem;
+	width: 100%;
+	background: #B8ECFF;
+  }
+  .riskWarningManagement {
+	position: relative;
+	margin: 0 auto;
+	width: 6.09rem;
+	height: 9.5rem;
+	background-image: url('./images/wap_riskWarningManagement_bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	.link_line {
+	  position: absolute;
+	  top: -1.0rem;
+	  left: 3.05rem;
+	  width: 0.14rem;
+	  height: 1.6rem;
+	  background-image: url('./images/wap_riskManagement_link_line.png');
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 100% 100%;
+	}
+	>h3 {
+	  position: relative;
+	  padding-top: 0.85rem;
+	  display: block;
+	  height: 0.32rem;
+	  font-size: 0.32rem;
+	  font-weight: bold;
+	  text-align: center;
+	  color: #4696EF;
+	  span:before {
+		position: absolute;
+		top:0.9rem;
+		left: 1.5rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_left.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	  span:after {
+		position: absolute;
+		top: 0.9rem;
+		right: 1.5rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_right.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	}
+	>p {
+	  margin: 0 auto;
+	  margin-top: 0.16rem;
+	  font-size: 0.16rem;
+	  line-height: 0.27rem;
+	  width: 3.2rem;
+	  color: #4696EF;
+	  text-align: center;
+	}
+	.riskWarningManagement_con_left {
+	  height: 6.5rem;
+	  width: 2.38rem;
+	  margin-top: 0.6rem;
+	  padding-left: 0.21rem;
+	  float: left;
+	  img {
+		display: block;
+		margin: 0 auto;
+		width: 1.24rem;
+		height: 0.91rem;
+		margin-top: 1.47rem;
+	  }
+	  img:nth-child(1){
+		width: 1.24rem;
+		height: 0.91rem;
+		margin-top: 0;
+	  }
+	}
+	.riskWarningManagement_con_right {
+	  margin-top: 0.4rem;
+	  height: 6.5rem;
+	  width: 3.24rem;
+	  float: right;
+	  >div {
+		padding-left: 0.24rem;
+		padding-right: 0.31rem;
+		padding-top: 0.4rem;
+		border-left: 1px dotted #C5D0ED;
+		h3 {
+		  position: relative;
+		  font-size: 0.23rem;
+		  color: #3057BF;
+		  margin-bottom: 0.19rem;
+		}
+		h3:before {
+		  position: absolute;
+		  top: 0.03rem;
+		  left: -0.31rem;
+		  content: '';
+		  width: 0.12rem;
+		  height: 0.12rem;
+		  border-radius: 50%;
+		  background: #1844B8;
+		}
+		p {
+		  font-size: 0.16rem;
+		  line-height: 0.27rem;
+		  color: #626262;
+		}
+	  }
+	  >div:first-child {
+		padding-top: 0;
+		margin-top: 0.3rem;
+	  }
+	  >div:nth-child(2) {
+		padding-top: 0;
+		padding-top: 0.1rem;
+		padding-bottom: 0.1rem;
+	  }
+	  >div:last-child {
+		padding-top: 0;
+		border: 0;
+	  }
+	}
+  }
+  // 贷后管理
+  .postLoanManagement {
+	width: 6.09rem;
+	height: 5.12rem;
+	margin: 1.02rem auto 0;
+	background-image: url('./images/wap_postLoanManagement_bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	>h3 {
+	  position: relative;
+	  padding-top: 0.25rem;
+	  display: block;
+	  height: 0.32rem;
+	  font-size: 0.32rem;
+	  font-weight: bold;
+	  text-align: center;
+	  color: #4696EF;
+	  span:before {
+		position: absolute;
+		top:0.3rem;
+		left: 1.8rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_left.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	  span:after {
+		position: absolute;
+		top: 0.3rem;
+		right: 1.8rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_right.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	}
+	>ul {
+	  margin-top: 0.96rem;
+	  height: 2.88rem;
+	  width: 100%;
+	  li {
+		height: 2.88rem;
+		width: 50%;
+		float: left;
+		text-align: center;
+		img {
+		  width: 1.47rem;
+		  height: 0.89rem;
+		  display: block;
+		  margin: 0 auto;
+		}
+		h4 {
+		  font-size: 0.2rem;
+		  color: #1844B8;
+		  margin: 0.27rem 0 0.16rem;
+		}
+		p {
+		  display: block;
+		  font-size: 0.18rem;
+		  width: 1.62rem;
+		  margin: 0 auto;
+		  color: #4A4A4A;
+		  line-height: 0.26rem;
+		}
+	  }
+	}
+  }
+
+  // 催收方式
+  .collectionMethod {
+	position: relative;
+	height: 4.82rem;
+	max-width: 10.52rem;
+	margin: 0 auto;
+	.link_line_left {
+	  position: absolute;
+	  top: -1.0rem;
+	  left: 1.05rem;
+	  width: 0.14rem;
+	  height: 1.3rem;
+	  background-image: url('./images/wap_riskManagement_link_line.png');
+	  background-repeat: no-repeat;
+	  background-position: center bottom;
+	  background-size: 100% 100%;
+	}
+	.link_line_right {
+	  position: absolute;
+	  top: -1.0rem;
+	  right: 1.05rem;
+	  width: 0.14rem;
+	  height: 1.3rem;
+	  background-image: url('./images/wap_riskManagement_link_line.png');
+	  background-repeat: no-repeat;
+	  background-position: center bottom;
+	  background-size: 100% 100%;
+	}
+	>h3 {
+	  position: relative;
+	  padding-top: 0.77rem;
+	  display: block;
+	  height: 0.32rem;
+	  font-size: 0.32rem;
+	  font-weight: bold;
+	  text-align: center;
+	  color: #4696EF;
+	  span:before {
+		position: absolute;
+		top: 0.82rem;
+		left: 1.55rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_left.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	  span:after {
+		position: absolute;
+		top: 0.82rem;
+		right:  1.55rem;
+		content: '';
+		width: 0.42rem;
+		height: 0.24rem;
+		background-image: url('./images/wap_riskManagementStructure_title_right.png');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 100% 100%;
+	  }
+	}
+	.ulWrap ul {
+	  width: 5.8rem;
+	  overflow: hidden;
+	  margin: 0.3rem auto 0;
+	  li {
+		width: 25%;
+		float: left;
+		text-align: center;
+		img {
+		  height: 0.52rem;
+		  width: 0.52rem;
+		  margin: 0 auto;
+		}
+		p:nth-child(2){
+		  display: block;
+		  width: 100%;
+		  font-size: 0.18rem;
+		  line-height: 0.22rem;
+		  margin: 0.21rem 0 0.1rem;
+		  color: #323232;
+		}
+	  }
+	}
+  }
+
+  // 保障
+  .Protection {
+	position: relative;
+	height: 26.98rem;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 1rem;
+	background: #B8ECFF;
+	.link_line {
+	  position: absolute;
+	  top: -0.1rem;
+	  left: 3.12rem;
+	  width: 0.14rem;
+	  height: 1.79rem;
+	  background-image: url('./images/wap_riskManagement_link_line.png');
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 100% 100%;
+	}
+	// 资金保障
+	.fund_guarantee {
+	  width: 6.09rem;
+	  height: 9.3rem;
+	  margin: 0 auto;
+	  background-image: url('./images/wap_fund_guarantee_bg.png');
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 100% 100%;
+	  >h3 {
+		position: relative;
+		padding-top: 0.98rem;
+		display: block;
+		height: 0.32rem;
+		font-size: 0.32rem;
+		font-weight: bold;
+		text-align: center;
+		color: #4696EF;
+		span:before {
+		  position: absolute;
+		  top: 1.02rem;
+		  left: 1.8rem;
+		  content: '';
+		  width: 0.42rem;
+		  height: 0.24rem;
+		  background-image: url('./images/wap_riskManagementStructure_title_left.png');
+		  background-repeat: no-repeat;
+		  background-position: bottom center;
+		  background-size: 100% 100%;
+		}
+		span:after {
+		  position: absolute;
+		  top: 1.02rem;
+		  right: 1.8rem;
+		  content: '';
+		  width: 0.42rem;
+		  height: 0.24rem;
+		  background-image: url('./images/wap_riskManagementStructure_title_right.png');
+		  background-repeat: no-repeat;
+		  background-position: bottom center;
+		  background-size: 100% 100%;
+		}
+	  }
+	  ul {
+		margin-top: 0.48rem;
+		li {
+		  height: 2.2rem;
+		  overflow: hidden;
+		  >div {
+			width: 50%;
+			height: 2.2rem;
+			float: left;
+			overflow: hidden;
+			img {
+			  width: 1.25rem;
+			  height: 0.9rem;
+			  display: block;
+			  margin:0.44rem auto 0;
+			}
+			h4 {
+			  font-size: 0.20rem;
+			  color: #335ABF;
+			  margin-bottom: 0.18rem;
+			}
+			p {
+			  font-size: 0.17rem;
+			  line-height: 0.27rem;
+			  width: 2.6rem;
+			  color: #070707;
+			}
+			a {
+			  color: #FFA09E;
+			  font-size: 0.17rem;
+			  line-height: 0.27rem;
+			}
+		  }
+		}
+		.fund_guarantee_txt {
+		  padding-top: 0.23rem;
+		}
+		li:nth-child(n+2){
+		  margin-top: 0.35rem;
+		}
+	  }
+	}
+
+	// 技术保障
+	.technical_support {
+	  width: 6.09rem;
+	  height: 5.68rem;
+	  margin: 0.99rem auto 0;
+	  overflow: hidden;
+	  background-image: url('./images/wap_technical_support_bg.png');
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 100% 100%;
+	  >h3 {
+		position: relative;
+		padding-top: 0.18rem;
+		display: block;
+		height: 0.32rem;
+		font-size: 0.32rem;
+		font-weight: bold;
+		text-align: center;
+		color: #4696EF;
+		span:before {
+		  position: absolute;
+		  top: 0.23rem;
+		  left: 1.8rem;
+		  content: '';
+		  width: 0.42rem;
+		  height: 0.24rem;
+		  background-image: url('./images/wap_riskManagementStructure_title_left.png');
+		  background-repeat: no-repeat;
+		  background-position: bottom center;
+		  background-size: 100% 100%;
+		}
+		span:after {
+		  position: absolute;
+		  top: 0.23rem;
+		  right: 1.8rem;
+		  content: '';
+		  width: 0.42rem;
+		  height: 0.24rem;
+		  background-image: url('./images/wap_riskManagementStructure_title_right.png');
+		  background-repeat: no-repeat;
+		  background-position: bottom center;
+		  background-size: 100% 100%;
+		}
+	  }
+	  >ul {
+		margin-top: 0.8rem;
+		height: 3.60rem;
+		width: 100%;
+		li {
+		  height: 1.95rem;
+		  width: 50%;
+		  float: left;
+		  text-align: center;
+		  >img {
+			width: 1.16rem;
+			height: 0.73rem;
+			display: block;
+			margin: 0 auto;
+		  }
+		  p {
+			display: block;
+			position: relative;
+			font-size: 0.18rem;
+			width: 1.8rem;
+			margin: 0.28rem auto 0;
+			color: #1844B8;
+			line-height: 0.26rem;
+			img {
+			  vertical-align: middle;
+			  margin-right: 0.05rem;
+			}
+		  }
+		}
+	  }
+	}
+	// 法律保障
+	.legal_protection {
+	  width: 6.09rem;
+	  height: 7.53rem;
+	  margin: 0.98rem auto 0;
+	  background-image: url('./images/wap_legal_protection_bg.png');
+	  background-repeat: no-repeat;
+	  background-position: bottom center;
+	  background-size: 100% 100%;
+	  >h3 {
+		position: relative;
+		padding-top: 1rem;
+		display: block;
+		height: 0.32rem;
+		font-size: 0.32rem;
+		font-weight: bold;
+		text-align: center;
+		color: #4696EF;
+		span:before {
+		  position: absolute;
+		  top: 1.05rem;
+		  left: 1.8rem;
+		  content: '';
+		  width: 0.42rem;
+		  height: 0.24rem;
+		  background-image: url('./images/wap_riskManagementStructure_title_left.png');
+		  background-repeat: no-repeat;
+		  background-position: bottom center;
+		  background-size: 100% 100%;
+		}
+		span:after {
+		  position: absolute;
+		  top: 1.05rem;
+		  right: 1.8rem;
+		  content: '';
+		  width: 0.42rem;
+		  height: 0.24rem;
+		  background-image: url('./images/wap_riskManagementStructure_title_right.png');
+		  background-repeat: no-repeat;
+		  background-position: bottom center;
+		  background-size: 100% 100%;
+		}
+	  }
+
+	  .legal_protection_con {
+		padding-left: 0.48rem;
+		padding-right: 0.37rem;
+		padding-top: 0.6rem;
+		>div {
+		  margin-bottom: 0.45rem;
+		}
+		h4 {
+		  font-size: 0.20rem;
+		  color: #1844B8;
+		  padding-bottom: 0.12rem;
+		  img {
+			vertical-align: middle;
+			padding-right: 0.15rem;
+		  }
+		}
+		p {
+		  padding-left: 0.28rem;
+		  font-size: 0.18rem;
+		  line-height: 0.28rem;
+		  color: #707070;
+		  a {
+			line-height: 0.3rem;
+			font-size: 0.19rem;
+			color: #FFA4A4;
+		  }
+		}
+	  }
+	}
+
+  }
+}
+
+// 信披确认函
+.confirmInformation {
+  padding: 1rem 0 1.5rem;
+}
+
+// 风险提示
+.xxpl_riskTips {
+  padding-top: 0.3rem;
+  .xxpl_riskTips_detail {
+	padding: 0 0.25rem;
+	>p {
+	  font-size: 0.2rem;
+	  line-height: 0.3rem;
+	  color: #4e4e4e;
+	}
+	h4 {
+	  position: relative;
+	  margin-top: 0.45rem;
+	  display: block;
+	  margin-bottom: 0.12rem;
+	  color: #2f2f2f;
+	  font-size: 0.23rem;
+	  font-weight: bold;
+	  &:before {
+		display: block;
+		position: absolute;
+		left: -0.1rem;
+		top: 0.11rem;
+		content: '';
+		width: 0.05rem;
+		height: 0.05rem;
+		background-color: #d44644;
+	  }
+	}
+
+	.bottom {
+	  border: 1px solid #ddd;
+	  padding: 0.1rem;
+	  text-align: center;
+	  margin: 0.3rem 0;
+	}
+
+  }
+}
+// 禁止性行为揭示
+.xxpl_forbid {
+  padding-top: 0.3rem;
+  .xxpl_forbid_detail {
+	padding: 0 0.25rem;
+	p {
+	  font-size: 0.2rem;
+	  line-height: 0.3rem;
+	  color: #4e4e4e;
+	}
+	h4 {
+	  position: relative;
+	  margin-top: 0.45rem;
+	  display: block;
+	  margin-bottom: 0.12rem;
+	  color: #2f2f2f;
+	  font-size: 0.23rem;
+	  font-weight: bold;
+	  &:before {
+		display: block;
+		position: absolute;
+		left: -0.1rem;
+		top: 0.11rem;
+		content: '';
+		width: 0.05rem;
+		height: 0.05rem;
+		background-color: #d44644;
+	  }
+	}
+	p.p_head {
+	  position: relative;
+	  padding-left: 0.65rem;
+	  span {
+		position: absolute;
+		left: 0;
+		top: 0;
+	  }
+	}
+
+	.wordBox {
+	  border: 1px solid #ddd;
+	  padding: 0.2rem;
+	  margin: 0.2rem 0 0;
+	}
+
+  }
+
+}
+// 法律关系解读
+.xxpl_legalRelation {
+  padding-top: 0.3rem;
+  .xxpl_legalRelation_detail { 
+	padding: 0 0.25rem;
+	>p {
+	  font-size: 0.2rem;
+	  line-height: 0.3rem;
+	  color: #4e4e4e;
+	}
+	h4 {
+	  position: relative;
+	  margin-top: 0.45rem;
+	  display: block;
+	  margin-bottom: 0.12rem;
+	  color: #2f2f2f;
+	  font-size: 0.23rem;
+	  font-weight: bold;
+	  &:before {
+		display: block;
+		position: absolute;
+		left: -0.1rem;
+		top: 0.11rem;
+		content: '';
+		width: 0.05rem;
+		height: 0.05rem;
+		background-color: #d44644;
+	  }
+	}
+
+
+  }
+}
+
+// 政策监管
+.Regulatory_policy {
+  position: relative;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  a {
+	display: block;
+	display: flex;
+	color: #535353;
+	background: #fff;
+	width: 100%;
+	font-size: 0.2rem;
+	min-height: 0.36rem;
+	line-height: 0.36rem;
+	padding-top: 0.12rem;
+	padding-bottom: 0.12rem;
+	span:first-child {
+	  display: block;
+	  flex: 1;
+	  padding-left: 0.23rem;
+	}
+	span:last-child {
+	  width: 0.32rem;
+	  height: 0.64rem;
+	  background-image: url('./images/rightTriangle.png');
+	  background-size: 0.32rem 0.64rem;
+	  background-position: left center;
+	}
+  }
+  a:first-child {
+	margin-top: 0;
+  }
+
+}
+
+
+// 合作机构 + 关联方担保
+.xxpl_cooperation {
+  .xxpl_cooperation_detail {
+	padding-bottom: 0.3rem;
+	img {
+	  width: 100%;
+	}
+	.tips {
+	  padding-top: 0.2rem;
+	  text-align: center;
+	  span {
+		display: inline-block;
+		height: 0.38rem;
+		line-height: 0.38rem;
+		padding: 0 0.1rem;
+		font-size: 0.15rem;
+		color: #fff;
+		background-color: #d3b181;
+	  }
+	}
+	p {
+	  padding: 0.2rem 0.1rem 0.2rem;
+	  text-indent: 2em;
+		color: #737373;
+		line-height: 1.5em;
+	}
+  }
+  &#related {
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+  }
+}
+
+
+
+
+// 返回按钮
+.returnBtn {
+	position: fixed;
+	z-index: 999;
+	top: 0.15rem;
+	left: 0.15rem;
+	height: 0.5rem;
+	width: 0.5rem;
+	background-image: url('./images/returnBtn.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}

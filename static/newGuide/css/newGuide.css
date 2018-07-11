@@ -1,0 +1,467 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body,
+html {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  overflow-x: hidden;
+  background: #fff;
+}
+img {
+  border: 0px;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+li,
+ol {
+  list-style: none;
+}
+img {
+  border: 0px;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  /*     display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center; */
+}
+body html {
+  height: 100px;
+  width: 100px;
+}
+/* 箭头 */
+.arrow {
+  position: absolute;
+  width: 0.61rem;
+  height: 0.77rem;
+  margin-left: -0.305rem;
+  background: url(../images/section_arrow.png) no-repeat;
+  background-size: 100% auto;
+  left: 50%;
+  bottom: .35333rem;
+  z-index: 2;
+}
+.arrow.arrow2 {
+  background: url(../images/section_arrow2.png) no-repeat;
+  background-size: 100% auto;
+}
+.arrow {
+  -webkit-animation: arrow 1.5s linear infinite;
+  animation: arrow 1.5s linear infinite;
+}
+@keyframes arrow {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, 0.21333rem, 0);
+    transform: translate3d(0, 0.21333rem, 0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+/* 公共样式 */
+.newGuide .section .section_title {
+  position: relative;
+  width: 3.6rem;
+  padding: 0 0.45rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  background: url(../images/title_bg1.png) right 2% no-repeat;
+  background-size: 0.67rem;
+}
+.newGuide .section .section_title p {
+  width: 3.6rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 0.23rem;
+  background-color: #117cdc;
+  box-shadow: 0 -0.04rem 0 #1b2086;
+  -webkit-box-shadow: 0 -0.04rem 0 #1b2086;
+  -moz-box-shadow: 0 -0.04rem 0 #1b2086;
+}
+.newGuide .section .section_title img {
+  position: absolute;
+  left: -0.2rem;
+  top: 0.1rem;
+  width: 0.9rem;
+}
+.newGuide .section .yyTime {
+  width: 2.83rem;
+  height: 1.23rem;
+  margin: 0 auto;
+  margin-top: 0.29rem;
+  background-color: #fff;
+  border: 0.03rem #117cda solid;
+}
+.newGuide .section .yyTime p {
+  font-size: 0.25rem;
+}
+.newGuide .section .yyTime p span {
+  color: #ff5351;
+}
+.newGuide .section .yyTime p:first-child {
+  margin-top: 0.22rem;
+}
+/* 第一页 */
+.newGuide .section1 {
+  background: url('../images/section1_bg.jpg') center no-repeat;
+  background-size: 100% auto;
+}
+.newGuide .section1 .section_title {
+  width: 4rem;
+}
+.newGuide .section1 .section_title P {
+  width: 4rem;
+  font-size: 0.29rem;
+}
+.newGuide .section1 .line {
+  position: relative;
+}
+.newGuide .section1 .line img {
+  height: 6.49rem;
+}
+.newGuide .section1 .line .line_box {
+  position: absolute;
+  background-color: #fff;
+  height: 0.9rem;
+  border-radius: 0.08rem;
+}
+.newGuide .section1 .line .line_box p {
+  font-size: 0.2rem;
+  line-height: 0.33rem;
+}
+.newGuide .section1 .line .line_box p span {
+  font-size: 0.22rem;
+  color: #ff5254;
+  font-weight: bold;
+}
+.newGuide .section1 .line .line_box p:first-child {
+  margin-top: 0.12rem;
+}
+.newGuide .section1 .line .line_box:before {
+  content: '';
+  position: absolute;
+  /*                 border-top: 12px solid transparent;
+border-right: 22px solid transparent;
+border-left: 22px solid #fff;
+border-bottom: 12px solid transparent; */
+}
+.newGuide .section1 .line .line_box1:before,
+.newGuide .section1 .line .line_box3:before {
+  right: -0.37rem;
+  top: 0.3rem;
+  border-top: 8px solid transparent;
+  border-right: 12px solid transparent;
+  border-left: 12px solid #fff;
+  border-bottom: 8px solid transparent;
+}
+.newGuide .section1 .line .line_box2:before,
+.newGuide .section1 .line .line_box4:before {
+  left: -0.37rem;
+  top: 0.3rem;
+  border-top: 8px solid transparent;
+  border-right: 12px solid #fff;
+  border-left: 12px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.newGuide .section1 .line .line_box1,
+.newGuide .section1 .line .line_box3 {
+  width: 1.8rem;
+  left: 0.8rem;
+}
+.newGuide .section1 .line .line_box2,
+.newGuide .section1 .line .line_box4 {
+  width: 2.4rem;
+  right: 0.34rem;
+}
+.newGuide .section1 .line .line_box1 {
+  top: 0.6rem;
+}
+.newGuide .section1 .line .line_box2 {
+  top: 2.1rem;
+}
+.newGuide .section1 .line .line_box3 {
+  top: 3.55rem;
+}
+.newGuide .section1 .line .line_box4 {
+  top: 5rem;
+}
+/* 第二页 */
+.newGuide .section2 {
+  /*   background: -webkit-linear-gradient(red, blue); Safari 5.1 - 6.0
+  background: -o-linear-gradient(red, blue); Opera 11.1 - 12.0
+  background: -moz-linear-gradient(red, blue); Firefox 3.6 - 15
+  background: linear-gradient(red, blue); 标准的语法 */
+}
+.newGuide .section2 .section_title {
+  padding: 0 0.45rem;
+  background-image: url(../images/title_bg2.png);
+}
+.newGuide .section2 .section_title p {
+  color: #fff;
+  border-radius: 0.23rem;
+  background-color: #f6a566;
+  box-shadow: 0 -0.04rem 0 #b36125;
+  -webkit-box-shadow: 0 -0.04rem 0 #b36125;
+  -moz-box-shadow: 0 -0.04rem 0 #b36125;
+}
+.newGuide .section2 .introduce {
+  height: 1.6rem;
+  font-size: 0.22rem;
+  line-height: 0.35rem;
+  color: #6d6d6d;
+  padding-top: 0.2rem;
+}
+.newGuide .section2 .detail {
+  background-color: #ededed;
+  height: 100%;
+  padding-top: 0.3rem;
+}
+.newGuide .section2 .detail .detail_box {
+  width: 6.04rem;
+  height: 1.9rem;
+  margin: 0 auto;
+  margin-bottom: 0.2rem;
+}
+/* 第三页 */
+.newGuide .section3 .section_title {
+  padding: 0 0.45rem;
+  margin-top: 0;
+  background-image: url(../images/title_bg2.png);
+}
+.newGuide .section3 .section_title p {
+  color: #fff;
+  border-radius: 0.23rem;
+  background-color: #fdc806;
+  box-shadow: 0 -0.04rem 0 #967501;
+  -webkit-box-shadow: 0 -0.04rem 0 #967501;
+  -moz-box-shadow: 0 -0.04rem 0 #967501;
+}
+.newGuide .section3 .div_top {
+  padding-top: 0.45rem;
+  height: 5.5rem;
+  background-color: #fff6d5;
+}
+.newGuide .section3 .div_top .detail {
+  width: 5.43rem;
+  margin: 0 auto;
+  padding-top: 0.7rem;
+}
+.newGuide .section3 .div_top .detail img {
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+.newGuide .section3 .div_top .word {
+  font-size: 0.2rem;
+  line-height: 0.34rem;
+  padding-top: 0.1rem;
+  color: #686554;
+}
+.newGuide .section3 .div_bottom img {
+  width: 100%;
+}
+/* 第四页 */
+.newGuide .section4 {
+  background: url('../images/section4_bg.jpg') center no-repeat;
+  background-size: 100% auto;
+}
+.newGuide .section4 .section_title {
+  padding: 0 0.45rem;
+  background-image: url(../images/title_bg1.png);
+}
+.newGuide .section4 .section_title p {
+  color: #fff;
+  border-radius: 0.23rem;
+  background-color: #707afe;
+  box-shadow: 0 -0.04rem 0 #6311a4;
+  -webkit-box-shadow: 0 -0.04rem 0 #6311a4;
+  -moz-box-shadow: 0 -0.04rem 0 #6311a4;
+}
+.newGuide .section4 .center_img {
+  height: 3rem;
+  padding: 0.2rem 0;
+}
+.newGuide .section4 .center_img img {
+  height: 100%;
+}
+.newGuide .section4 .detail .detail_left {
+  float: left;
+  width: 2.33rem;
+  margin-left: 0.46rem;
+}
+.newGuide .section4 .detail .detail_left img {
+  width: 100%;
+  border-radius: 0.05rem;
+  margin-bottom: 0.15rem;
+}
+.newGuide .section4 .detail .detail_right {
+  float: left;
+  width: 2.33rem;
+  margin-left: 0.52rem;
+}
+.newGuide .section4 .detail .detail_right img {
+  width: 100%;
+  border-radius: 0.05rem;
+  margin-bottom: 0.15rem;
+}
+.newGuide .section4 .detail .detail_right img:last-child {
+  width: 2.9rem;
+}
+/* 第五页 */
+.newGuide .section5 {
+  background: url('../images/section5_bg.jpg') center no-repeat;
+  background-size: 100% auto;
+}
+.newGuide .section5 .section_title {
+  padding: 0 0.45rem;
+  background-image: url(../images/title_bg2.png);
+}
+.newGuide .section5 .section_title p {
+  color: #fff;
+  border-radius: 0.23rem;
+  background-color: #f09b00;
+  box-shadow: 0 -0.04rem 0 #654202;
+  -webkit-box-shadow: 0 -0.04rem 0 #654202;
+  -moz-box-shadow: 0 -0.04rem 0 #654202;
+}
+
+.newGuide .section5 .word {
+  padding-top: 0.45rem;
+  color: #4f4f4f;
+  font-size: 0.25rem;
+}
+.newGuide .section5 .detail {
+  padding-top: 0.4rem;
+}
+.newGuide .section5 .detail img {
+  padding-top: 0.2rem;
+  width: 97%;
+}
+/* 第六页 */
+.newGuide .section6 {
+  background: url('../images/section6_bg.jpg') center no-repeat;
+  background-size: 100% auto;
+}
+.newGuide .section6 .tip {
+  width: 3.6rem;
+  margin: 0.7rem auto;
+  width: 3.54rem;
+}
+.newGuide .section6 .tip img {
+  width: 100%;
+}
+.newGuide .section6 .detail {
+  display: flex;
+  height: 2.5rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 75%;
+  margin: 0 auto;
+}
+.newGuide .section6 .detail img {
+  width: 1.6rem;
+}
+/* 第七页 */
+.newGuide .section7 {
+  background: url('../images/section7_bg.jpg') center no-repeat;
+  background-size: 100% auto;
+}
+.newGuide .section7 .section_title {
+  padding: 0 0.45rem;
+  background-image: url(../images/title_bg2.png);
+}
+.newGuide .section7 .section_title p {
+  color: #fff;
+  border-radius: 0.23rem;
+  background-color: #fdc806;
+  box-shadow: 0 -0.04rem 0 #ac8800;
+  -webkit-box-shadow: 0 -0.04rem 0 #ac8800;
+  -moz-box-shadow: 0 -0.04rem 0 #ac8800;
+}
+.newGuide .section7 .detail .detail_box {
+  float: left;
+  width: 2.83rem;
+  height: 4.44rem;
+  margin-left: 0.25rem;
+  margin-top: 0.84rem;
+}
+.newGuide .section7 .detail .detail_box p {
+  font-size: 14px;
+}
+.newGuide .section7 .detail .detail_box p:first-child {
+  font-size: 15px;
+  line-height: 30px;
+  padding-top: 2.9rem;
+  color: #fe5052;
+  font-weight: bold;
+}
+@media screen and (max-width: 340px) {
+  .newGuide .section7 .detail .detail_box p {
+    font-size: 12px;
+  }
+}
+.newGuide .section7 .detail .detail_box1 {
+  background: url('../images/section7_detail1.png') center no-repeat;
+  background-size: 100%;
+}
+.newGuide .section7 .detail .detail_box2 {
+  background: url('../images/section7_detail2.png') center no-repeat;
+  background-size: 100%;
+}
+.newGuide .section7 .btn {
+  padding-top: 1.5rem;
+}
+.newGuide .section7 .btn img {
+  width: 2.19rem;
+}
