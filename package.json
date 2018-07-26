@@ -2,7 +2,7 @@
   "name": "ljs_1.0",
   "version": "1.0.0",
   "description": "a Vue.js project",
-  "author": "邹金鑫 <zoujx@uf-club.com>",
+  "author": "<zoujx@uf-club.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config buildFront/webpack.dev.conf.js",
